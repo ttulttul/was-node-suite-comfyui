@@ -1,21 +1,8 @@
-# **WAS** Node Suite &nbsp; [![Colab](https://camo.githubusercontent.com/84f0493939e0c4de4e6dbe113251b4bfb5353e57134ffd9fcab6b8714514d4d1/68747470733a2f2f636f6c61622e72657365617263682e676f6f676c652e636f6d2f6173736574732f636f6c61622d62616467652e737667)](https://colab.research.google.com/github/WASasquatch/was-node-suite-comfyui/blob/main/ComfyUI_%2B_WAS_Node_Suite_and_ComfyUI_Manager.ipynb) [![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FWASasquatch%2Fwas-node-suite-comfyui&count_bg=%233D9CC8&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com) [![Donate](https://img.shields.io/badge/Donate-PayPal-blue.svg)](https://paypal.me/ThompsonJordan?country.x=US&locale.x=en_US)
+# **WAS** Node Suite
 
-<p align="center">
-    <img src="https://user-images.githubusercontent.com/1151589/228982359-4a6215cc-3ca9-4c24-8a7b-d229d7bce277.png">
-</p>
+### New! Now maintained by `ttul`.
 
 ### A node suite for [ComfyUI](https://github.com/comfyanonymous/ComfyUI) with many new nodes, such as image processing, text processing, and more.
-
-#### [Share Workflows](https://github.com/WASasquatch/was-node-suite-comfyui/wiki/Workflow-Examples) to the workflows wiki. Preferably embedded PNGs with workflows, but JSON is OK too. [You can use this tool to add a workflow to a PNG file easily](https://colab.research.google.com/drive/1hQMjNUdhMQ3rw1Wcm3_umvmOMeS_K4s8?usp=sharing).
-#### Consider [donating to the project](https://paypal.me/ThompsonJordan?country.x=US&locale.x=en_US) to help it's continued development.
-
-# Important Updates
-
-- **12/15/2023** WAS-NS is not under active development. I do not have the time and have other obligations. Feel free to fork and continue the project. I will approve appropriate and beneficial PRs.
-- **[Updated 10/8/2023]** BLIP is now a shipped module of WAS-NS and no longer requires the BLIP Repo
- - **[Updated 5/29/2023]** `ASCII` **is deprecated**. The new preferred method of text node output is `STRING`. This is a change from `ASCII` so that it is more clear what data is being passed.
-   - The `was_suite_config.json` will automatically set `use_legacy_ascii_text` to `false`.
- -  [Video Nodes](https://github.com/WASasquatch/was-node-suite-comfyui#video-nodes) - There are two new video nodes, `Write to Video` and `Create Video from Path`. These are experimental nodes.
 
 # Current Nodes:
 
@@ -148,6 +135,7 @@
  - Image fDOF Filter: Apply a fake depth of field effect to an image
  - Image to Latent Mask: Convert a image into a latent mask
  - Image to Noise: Convert a image into noise, useful for init blending or init input to theme a diffusion.
+ - Image to Noise Advanced: Like `Image to Noise`, only faster (uses GPU) and with attention masking!
  - Images to RGB: Convert a tensor image batch to RGB if they are RGBA or some other mode.
  - Image to Seed: Convert a image to a reproducible seed
  - Image Voronoi Noise Filter
